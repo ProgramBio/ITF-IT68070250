@@ -1,13 +1,16 @@
 nav {
-    background-color: turquoise;
+    background-image: linear-gradient(to bottom, #55b3ab, rgb(43, 175, 232));
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+}
+
+p,  h1 {
+    color:whitesmoke;
 }
 
 body {
-    margin: 0;
+
 }
 
 .container {
