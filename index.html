@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "styles.css">
+    <title>ITF Simple Bank</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
@@ -12,16 +12,77 @@
         <h1>ITF Website</h1>
         <p>Week 14</p>
     </nav>
-    <img src = "yeyemoji.png" alt = "thumbemoji" width = "100" height = "80">
-    <div class = "container">
-        <div>
-            Enter number: <input type = "number" id = "my_input" value = 0>
-            <button onclick = "add()"> +1</button>
+
+    <header class="header-flex">
+        <img src="yeyemoji.png" alt="emoji" width="100" height="80">
+        <div class="header-text">
+            <h2>ITF Simple Bank</h2>
+            <p>Welcome to my first HTML + CSS + JS website!</p>
         </div>
-        <div>
-            Right
-        </div>
-    </div>
-    <script src = "script.js"></script>
+    </header>
+
+    <section class="output-box">
+        <p id="log">1, Current account balance: 1000, Current cash balance: 1000</p>
+    </section>
+
+    <main>
+        <section class="account">
+            <h3>Account Overview</h3>
+
+            <div class="info">
+                <img src="freeimage/user.png" alt="user" width="60">
+                <div>
+                    <p><b>Name :</b> Natchanon Muandat </p>
+                    <p><b>Type :</b> Savings Account</p>
+                </div>
+            </div>
+
+            <div class="balance">
+                <img src="freeimage/briefcase.png" alt="balance" width="60">
+                <div>
+                    <p>Current account balance : 
+                        <input type="number" id="accountBalance" value="1000">
+                    </p>
+                    <p>Current cash balance :
+                        <input type="number" id="cashBalance" value="1000">
+                    </p>
+                </div>
+            </div>
+
+            <div class="operation">
+                <img src="freeimage/toolbox.png" alt="atm" width="60">
+                <div>
+                    <label for="operation">Bank Operation</label><br>
+                    <select id="operation">
+                        <option value="deposit">Deposit</option>
+                        <option value="withdraw">Withdraw</option>
+                    </select>
+                    <input type="number" id="amount" placeholder="Enter amount">
+                    <button onclick="proceed()">Proceed</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools">
+            <h3>Financial Tools</h3>
+            <div class="converter">
+                <img src="freeimage/coins.png" alt="coins" width="60">
+                <div>
+                    <label>Input balance :</label>
+                    <input type="number" id="inputCurrency" value="0"><br>
+                    <label>Output balance:</label>
+                    <input type="number" id="outputCurrency" value="0"><br>
+                    <label>Input currency :</label>
+                    <select id="currencyType">
+                        <option value="USD">USD</option>
+                        <option value="THB">THB</option>
+                    </select>
+                    <button onclick="convertCurrency()">Convert</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
