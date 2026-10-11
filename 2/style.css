@@ -18,7 +18,7 @@ body {
     position: fixed;
     transform: translate(-50%, -50%);
 
-    padding: 28px 24px;
+    padding: 24px 20px;
     border-radius: 16px;
     background-color: #1e293b;
     border: 2px solid #334155;
@@ -26,30 +26,39 @@ body {
 
     display: grid;
     grid-template-columns: auto auto;
-    gap: 16px;
+    width: max-content;
+    max-width: 95vw;
 }
 
 .box > div {
-    padding: 0px 16px;
+    padding: 0px 20px;
     text-align: center;
 }
 
 .img-profile {
     width: 108px;
+    height: 108px;
+    object-fit: cover;
     border-radius: 100%;
     padding: 4px; 
     background: linear-gradient(155deg, #80AEFF, #FFC0FF);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+.left-box {
+    border-right: 1px solid #334155; 
+    white-space: nowrap;
 }
 
 .t-center {
     text-align: center;
-    min-width: 260px;
+    width: 240px;
 }
 
 h2 {
     margin: 0 0 8px 0;
     color: #ffffff;
+    font-size: 20px;
 }
 
 p {
@@ -73,28 +82,26 @@ a:hover {
 }
 
 .todo {
-    margin-bottom: 14px;
-}
-
-.left-box {
-    border-right: 1px solid #334155; 
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
 .btm-8 {
-    padding-bottom: 14px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #334155;
     display: flex;
-    gap: 8px;
+    gap: 6px;
 }
 
 #in_list {
     background-color: #0f172a;
     border: 1px solid #334155;
     color: #f1f5f9;
-    padding: 6px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
     outline: none;
-    flex: 1;
+    width: 100%;
+    min-width: 0;
 }
 
 #in_list:focus {
@@ -105,17 +112,18 @@ a:hover {
     background: linear-gradient(155deg, #80AEFF, #FFC0FF);
     color: #0f172a;
     border: none;
-    padding: 6px 14px;
+    padding: 6px 12px;
     border-radius: 6px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0px;
+    margin: 8px 0px;
     padding: 8px 12px;
     background-color: #0f172a;
     border-radius: 6px;
@@ -137,13 +145,14 @@ a:hover {
 }
 
 #divList {
-    max-height: 200px;
+    max-height: 210px;
     overflow-y: auto;
-    padding-right: 6px;
+    padding-right: 4px;
+    margin-top: 8px;
 }
 
 #divList::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 #divList::-webkit-scrollbar-track {

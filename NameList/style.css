@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080e1a; 
+    color: #f1f5f9;
+    margin: 0;
+}
+
+.box {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+
+    padding: 36px 30px;
+    border-radius: 24px;
+    background-color: #1e293b;
+    border: 3px solid #334155;
+    box-shadow: 0px 18px 45px rgba(0, 0, 0, 0.6);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    width: max-content;
+    max-width: 95vw;
+}
+
+.box > div {
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.img-profile {
+    width: 162px;
+    height: 162px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 6px; 
+    background: linear-gradient(155deg, #80AEFF, #FFC0FF);
+    margin-bottom: 15px;
+}
+
+.left-box {
+    border-right: 1.5px solid #334155; 
+    white-space: nowrap;
+}
+
+.t-center {
+    text-align: center;
+    width: 360px;
+}
+
+h2 {
+    margin: 0 0 12px 0;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+p {
+    margin: 9px 0;
+    color: #94a3b8;
+    font-size: 21px;
+}
+
+a, .name {
+    background: linear-gradient(155deg, #80AEFF, #FFC0FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a {
+    font-size: 21px;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.name {
+    margin-bottom: 15px;
+    font-size: 33px;
+}
+
+.btm-8 {
+    padding-bottom: 18px;
+    border-bottom: 1.5px solid #334155;
+    display: flex;
+    gap: 9px;
+}
+
+#in_list {
+    background-color: #0f172a;
+    border: 1.5px solid #334155;
+    color: #f1f5f9;
+    padding: 9px 15px;
+    border-radius: 9px;
+    outline: none;
+    width: 100%;
+    min-width: 0;
+    font-size: 20px;
+}
+
+#in_list:focus {
+    border-color: #80AEFF;
+}
+
+#btnAdd {
+    background: linear-gradient(155deg, #80AEFF, #FFC0FF);
+    color: #0f172a;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px;
+    padding: 12px 18px;
+    background-color: #0f172a;
+    border-radius: 9px;
+    font-size: 21px;
+}
+
+.list button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.list button:hover {
+    background-color: #dc2626;
+}
+
+#divList {
+    max-height: 315px;
+    overflow-y: auto;
+    padding-right: 6px;
+    margin-top: 12px;
+}
+
+#divList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#divList::-webkit-scrollbar-track {
+    background: #0f172a;
+    border-radius: 12px;
+}
+
+#divList::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 12px;
+}
+
+#divList::-webkit-scrollbar-thumb:hover {
+    background: #80AEFF;
+}
