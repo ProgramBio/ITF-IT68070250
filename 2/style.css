@@ -135,3 +135,27 @@ a:hover {
 .list button:hover {
     background-color: #dc2626;
 }
+
+#divList {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+#divList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#divList::-webkit-scrollbar-track {
+    background: #0f172a;
+    border-radius: 8px;
+}
+
+#divList::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 8px;
+}
+
+#divList::-webkit-scrollbar-thumb:hover {
+    background: #80AEFF;
+}
